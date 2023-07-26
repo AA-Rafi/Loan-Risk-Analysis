@@ -8,9 +8,11 @@ Data Source: https://www.kaggle.com/datasets/wordsforthewise/lending-club
 
 ## Technology Deployed:
 
-Data Exploration with SQL: Starting by exploring the loan portfolio dataset using light SQL queries. Understand the data's structure and perform basic data cleaning to ensure it's ready for analysis.
-Python and Pandas: Light ETL to clean unusable/unclean segments of the data.  
-Tableau Story: Used to create a comprehensive Tableau story that presents an overview of the loan portfolio's credit risk. Visualizations to display the distribution of credit scores, loan amounts, and repayment patterns. Highlight any patterns or trends that could indicate higher risk segments.
+- Data Exploration with SQL: Starting by exploring the loan portfolio dataset using light SQL queries. Understand the data's structure and perform basic data cleaning to ensure it's ready for analysis.
+
+- Python and Pandas: Light ETL to clean unusable/unclean segments of the data.  
+
+- Tableau Story: Used to create a comprehensive Tableau story that presents an overview of the loan portfolio's credit risk. Visualizations to display the distribution of credit scores, loan amounts, and repayment patterns. Highlight any patterns or trends that could indicate higher risk segments.
 HTML/CSS/JS Visuals: Deployed to enhance the Tableau story by embedding custom HTML/CSS/JS visuals. 
 
 ## Timeline
