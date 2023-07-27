@@ -1,3 +1,5 @@
+DROP TABLE base_accepted_loans;
+
 CREATE TABLE base_accepted_loans (
     id INT,
     member_id INT,
@@ -150,3 +152,5 @@ CREATE TABLE base_accepted_loans (
 	settlement_amount FLOAT,
 	settlement_percentage FLOAT,
 	settlement_term INT	);
+	
+COPY base_accepted_loans FROM 'E:\DataSci\Project 4\Resources\accepted_2007_to_2018Q4.csv' DELIMITER ',' CSV HEADER;
