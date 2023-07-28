@@ -3,8 +3,8 @@ DROP TABLE IF EXISTS base_accepted_loans;
 CREATE TABLE base_accepted_loans (
     id FLOAT,
     member_id INT,
-    loan_amnt INT,
-    funded_amnt INT,
+    loan_amnt FLOAT,
+    funded_amnt FLOAT,
     funded_amnt_inv FLOAT,
     term VARCHAR(20),
     int_rate FLOAT,
@@ -26,10 +26,10 @@ CREATE TABLE base_accepted_loans (
     zip_code VARCHAR(10),
     addr_state CHAR(2),
     dti FLOAT,
-    delinq_2yrs INT,
+    delinq_2yrs FLOAT,
     earliest_cr_line VARCHAR(255),
-    fico_range_low INT,
-    fico_range_high INT,
+    fico_range_low FLOAT,
+    fico_range_high FLOAT,
     inq_last_6mths INT,
     mths_since_last_delinq INT,
     mths_since_last_record INT,
@@ -120,7 +120,7 @@ CREATE TABLE base_accepted_loans (
 	sec_app_fico_range_low INT,
 	sec_app_fico_range_high INT, 
 	sec_app_earliest_cr_line VARCHAR(255),
-	sec_app_inq_last_6mths INT,
+	sec_app_inq_last_6mths FLOAT,
 	sec_app_mort_acc INT,
 	sec_app_open_acc INT,
 	sec_app_revol_util FLOAT,
@@ -153,4 +153,4 @@ CREATE TABLE base_accepted_loans (
 	settlement_percentage FLOAT,
 	settlement_term INT	);
 	
-COPY base_accepted_loans FROM 'E:\DataSci\Project 4\Resources\accepted_2007_to_2018Q4.csv' DELIMITER ',' CSV HEADER;
+COPY base_accepted_loans FROM 'E:\DataSci\Project 4\Resources\clean_accepted.csv' DELIMITER ',' CSV HEADER;
