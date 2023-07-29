@@ -155,4 +155,4 @@ CREATE TABLE base_accepted_loans (
 	
 COPY base_accepted_loans FROM 'E:\DataSci\Project 4\Resources\clean_accepted.csv' DELIMITER ',' CSV HEADER;
 
-
+SELECT id from base_accepted_loans;
