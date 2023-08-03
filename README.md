@@ -8,6 +8,7 @@ PowerBI Dashboard File (Too Large to publish on Github): https://drive.google.co
 
 Data Source: https://www.kaggle.com/datasets/wordsforthewise/lending-club 
 
+Data Source Definition Dictionary: https://www.kaggle.com/datasets/adarshsng/lending-club-loan-data-csv
 ## Technology Deployed:
 
 - Data Exploration with SQL: Starting by exploring the loan portfolio dataset using light SQL queries. Understand the data's structure and perform basic data cleaning to ensure it's ready for analysis.
