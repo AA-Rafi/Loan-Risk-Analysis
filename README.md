@@ -4,6 +4,8 @@ Members: Abdullah Ar Rafi
 ## Description
 In this project, I will analyze and assess the credit risk associated with a loan portfolio. The dataset should include information about borrowers, loan details, repayment history, credit scores, and other relevant financial metrics. The goal is to gain insights into the risk profile of the portfolio and identify potential areas of concern.
 
+PowerBI Dashboard File (Too Large to publish on Github): https://drive.google.com/file/d/1SMOtKj3qMNTgRsJ6nxP_ua658Hx3Dgn0/view?usp=sharing
+
 Data Source: https://www.kaggle.com/datasets/wordsforthewise/lending-club 
 
 ## Technology Deployed:
