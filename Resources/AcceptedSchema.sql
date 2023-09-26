@@ -26,6 +26,7 @@ CREATE TABLE loan_details (
     grade VARCHAR(5),
     sub_grade VARCHAR(5),
     issue_d VARCHAR(255),
+	home_ownership VARCHAR(255)
     loan_status VARCHAR(50),
     purpose VARCHAR(255),
     title VARCHAR(255),
