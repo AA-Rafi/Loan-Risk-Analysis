@@ -19,9 +19,9 @@ Data Source Definition Dictionary: https://www.kaggle.com/datasets/adarshsng/len
 HTML/CSS/JS Visuals: Deployed to enhance the Tableau story by embedding custom HTML/CSS/JS visuals. 
 
 ## Timeline
-1.	Data Collection (July 22nd)
+1.	Data Collection 
 
-2.	ETL (July 24th-25th) 
+2.	ETL 
 - Import the dataset into Tableau and explore its structure.
 - Clean and preprocess the data if needed (e.g., handle missing values, data type conversions).
 - Perform basic data profiling to understand data distributions and outliers.
