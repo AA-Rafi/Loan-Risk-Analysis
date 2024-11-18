@@ -1,5 +1,3 @@
-DROP TABLE main_loan_portfolio;
-
 CREATE TABLE personal_info (
     id FLOAT PRIMARY KEY,
     member_id FLOAT,
@@ -16,8 +14,7 @@ SELECT id, member_id, emp_title, emp_length, home_ownership, annual_inc, addr_st
 FROM base_accepted_loans;
 
 CREATE TABLE loan_details (
-    id FLOAT PRIMARY KEY,     -- Acting as both unique identifier and foreign key to reference the personal_info table or other related tables.
-    loan_amnt FLOAT,
+    id FLOAT PRIMARY KEY,     
     funded_amnt FLOAT,
     funded_amnt_inv FLOAT,
     term VARCHAR(20),
@@ -36,4 +33,29 @@ CREATE TABLE loan_details (
 
 INSERT INTO loan_details (id, loan_amnt, funded_amnt, funded_amnt_inv, term, int_rate, installment, grade, sub_grade, issue_d, loan_status, purpose, title, url, description)
 SELECT id, loan_amnt, funded_amnt, funded_amnt_inv, term, int_rate, installment, grade, sub_grade, issue_d, loan_status, purpose, title, url, description
+FROM base_accepted_loans;
+
+CREATE TABLE Financial_Metrics (
+    id INT PRIMARY KEY,
+    dti FLOAT,
+    revol_bal FLOAT,
+    total_rev_hi_lim INT,
+    recoveries FLOAT,
+    collection_recovery_fee FLOAT
+);
+
+INSERT INTO financial_metrics (id, dti, revol_bal, total_rev_hi_lim, recoveries, collection_recovery_fee)
+SELECT id, dti, revol_bal, total_rev_hi_lim, recoveries, collection_recovery_fee
+FROM base_accepted_loans;
+
+CREATE TABLE delinquency_hardship (
+    id INT PRIMARY KEY,
+    hardship_flag CHAR(1),
+    delinq_amnt INT,
+    delinq_2yrs INT,
+    total_acc INT
+);
+
+INSERT INTO delinquency_hardship (id, hardship_flag, delinq_amnt, delinq_2yrs, total_acc)
+SELECT id, hardship_flag, delinq_amnt, delinq_2yrs, total_acc
 FROM base_accepted_loans;
