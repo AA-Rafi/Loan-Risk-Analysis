@@ -1,4 +1,4 @@
-drop table loans 
+drop table base_accepted_loans
 CREATE TABLE base_accepted_loans (
     id INT,
     member_id INT,
