@@ -1,4 +1,4 @@
-# Project 4 Proposal: Credit Risk Analysis for Loan Portfolio 
+# LendingClub: Credit Risk Analysis for Loan Portfolio 
 
 Members: Abdullah Ar Rafi
 ## Description
