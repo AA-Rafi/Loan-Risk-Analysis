@@ -1,5 +1,5 @@
 drop table loans 
-CREATE TABLE base_acce (
+CREATE TABLE base_accepted_loans (
     id INT,
     member_id INT,
     loan_amnt INT,
